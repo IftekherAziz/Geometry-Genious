@@ -1,12 +1,269 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 5</title>
+
+    <!--------- DaisyUI CDN Link ---------->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+
+    <!----------Tailwind CDN Link---------->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!---------- Font Awesome Link ---------->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+
 </head>
+
 <body>
-    <h1>hello world</h1>
+    <!--------- Header Start---------->
+    <header class="m-4 md:m-12">
+        <div class="navbar bg-sky-100 p-6 rounded flex justify-between">
+            <div class="flex flex-col">
+                <h1 class="normal-case text-4xl font-bold">Interactive</h1>
+                <h3 class="text-2xl">Geometry Genius</h3>
+            </div>
+            <div class="navbar-end">
+                <a class="btn btn-info px-6 py-0 text-white normal-case" href="blog.html">Blog</a>
+            </div>
+        </div>
+    </header>
+    <!--------- Main Start---------->
+    <main class="m-4 md:m-0 lg:m-0">
+        <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row gap-4">
+            <div class="products-cetails w-full md:w-[75%] lg:w-[75%] grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!------- Triangle card  ------->
+                <div class="card w-full mx-auto bg-base-100 border">
+                    <figure class="px-10 pt-10">
+                        <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-bold">Triangle</h2>
+                        <p class="text-sm">Area (A) = 0.5 x b x h</p>
+                        <div class="py-2 ">
+                            <span>b = 4cm</span>,
+                            <span>h = 10cm</span>
+                            <!-- <span>
+                                <i class="fa-regular fa-pen-to-square"></i>
+                            </span> -->
+                        </div>
+                        <div class="flex justify-between px-3 w-[70%] md:w-[90%] lg:w-[90%] ">
+                            <div class="flex ">
+                                <input type="number" name="base" id=""
+                                    class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="b">
+                                <p>cm</p>
+                            </div>
+                            <div class="flex ">
+                                <input type="number" name="base" id=""
+                                    class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="h">
+                                <p>cm</p>
+                            </div>
+                            <!--  <div class="flex ">
+                                <input type="checkbox" class= "checkbox checkbox-info checkbox-sm" name="" id="">
+                            </div> -->
+                        </div>
+                        <div class="card-actions pt-3">
+                            <button class="btn btn-wide btn-info text-white normal-case">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!------- Rectangle card  ------->
+                <div class="card w-full mx-auto bg-base-100 border">
+                    <figure class="px-10 pt-10">
+                        <img src="images/rectangle.png" alt="Rectangle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-bold">Rectangle</h2>
+                        <p class="text-sm">Area (A) = w x I</p>
+                        <div class="py-2 ">
+                            <span>w = 10cm </span>,
+                            <span>I = 5cm </span>
+                            <!-- <span><i class="fa-regular fa-pen-to-square"></i></span> -->
+                        </div>
+                        <div class="flex justify-between px-5 w-[70%] md:w-[90%] lg:w-[90%] ">
+                            <div class="flex">
+                                <input type="number" name="base" id=""
+                                    class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="w">
+                                <p>cm</p>
+                            </div>
+                            <div class="flex">
+                                <input type="number" name="base" id=""
+                                    class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="I">
+                                <p>cm</p>
+                            </div>
+                            <!-- <div class="flex ">
+                                <input type="checkbox" class="checkbox checkbox-info checkbox-sm" name="" id="">
+                            </div> -->
+                        </div>
+                        <div class="card-actions pt-3">
+                            <button class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!------- Parallelogram card  ------->
+                <div class="card w-full mx-auto bg-base-100 border">
+                    <figure class="px-10 pt-10">
+                        <img src="images/parallelogram.png" alt="Rectangle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-bold">Parallelogram</h2>
+                        <p class="text-sm">Area (A) = b x h</p>
+                        <div class="py-2 ">
+                            <span>b = 10cm </span>,
+                            <span>h = 12cm </span>
+                            <!-- <span><i class="fa-regular fa-pen-to-square"></i></span> -->
+                        </div>
+                        <div class="flex justify-between px-5 w-[70%] md:w-[90%] lg:w-[90%] ">
+                            <div class="flex ">
+                                <input type="number" name="base" id=""
+                                    class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="b">
+                                <p>cm</p>
+                            </div>
+                            <div class="flex ">
+                                <input type="number" name="base" id=""
+                                    class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="h">
+                                <p>cm</p>
+                            </div>
+                            <!--  <div class="flex ">
+                                <input type="checkbox" class="checkbox checkbox-info checkbox-sm" name="" id="">
+                            </div> -->
+                        </div>
+                        <div class="card-actions pt-3">
+                            <button class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!------- Rhombus card  ------->
+                <div class="card w-full mx-auto bg-base-100 border">
+                    <figure class="px-10 pt-10">
+                        <img src="images/rhombus.png" alt="Rectangle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-bold">Rhombus</h2>
+                        <p class="text-sm">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
+                        <div class="py-2 ">
+                            <span>d<sub>1</sub> = 16cm </span>,
+                            <span>d<sub>2</sub> = 8cm </span>
+                            <!-- <span><i class="fa-regular fa-pen-to-square"></i></span> -->
+                        </div>
+                        <div class="flex justify-between px-5 w-[70%] md:w-[90%] lg:w-[90%] ">
+                            <div class="flex">
+                                <input type="number" name="base" id=""
+                                    class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="b1">
+                                <p>cm</p>
+                            </div>
+                            <div class="flex ">
+                                <input type="number" name="base" id=""
+                                    class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="b2">
+                                <p>cm</p>
+                            </div>
+                            <!--  <div class="flex ">
+                                <input type="checkbox" class="checkbox checkbox-info checkbox-sm" name="" id="">
+                            </div> -->
+                        </div>
+                        <div class="card-actions pt-3">
+                            <button class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!------- Pentagon card  ------->
+                <div class="card w-full mx-auto bg-base-100 border">
+                    <figure class="px-10 pt-10">
+                        <img src="images/pentagon.png" alt="Rectangle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-bold">Pentagon</h2>
+                        <p class="text-sm">Area (A) = 0.5 x p x b</p>
+                        <div class="py-2 ">
+                            <span>p = 6cm </span>,
+                            <span>b = 10cm </span>
+                            <!-- <span><i class="fa-regular fa-pen-to-square"></i></span> -->
+                        </div>
+                        <div class="flex justify-between px-5 w-[70%] md:w-[90%] lg:w-[90%] ">
+                            <div class="flex ">
+                                <input type="number" name="base" id=""
+                                    class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="p">
+                                <p>cm</p>
+                            </div>
+                            <div class="flex ">
+                                <input type="number" name="base" id=""
+                                    class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="b">
+                                <p>cm</p>
+                            </div>
+                            <!-- <div class="flex ">
+                                <input type="checkbox" class="checkbox checkbox-info checkbox-sm" name="" id="">
+                            </div> -->
+                        </div>
+                        <div class="card-actions pt-3">
+                            <button class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+                <!------- Ellipse card  ------->
+                <div class="card w-full mx-auto bg-base-100 border">
+                    <figure class="px-10 pt-10">
+                        <img src="images/ellipse.png" alt="Rectangle" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                        <h2 class="card-title font-bold">Ellipse</h2>
+                        <p class="text-sm">Area (A) = πab</p>
+                        <div class="py-2 ">
+                            <span>a = 10cm </span>,
+                            <span>b = 4cm </span>
+                            <!-- <span><i class="fa-regular fa-pen-to-square"></i></span> -->
+                        </div>
+                        <div class="flex justify-between px-5 w-[70%] md:w-[90%] lg:w-[90%] ">
+                            <div class="flex ">
+                                <input type="number" name="base" id=""
+                                    class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="a">
+                                <p>cm</p>
+                            </div>
+                            <div class="flex">
+                                <input type="number" name="base" id=""
+                                    class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="b">
+                                <p>cm</p>
+                            </div>
+                            <!--  <div class="flex ">
+                                <input type="checkbox" class="checkbox checkbox-info checkbox-sm" name="" id="">
+                            </div> -->
+                        </div>
+                        <div class="card-actions pt-3">
+                            <button class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- cart details div  -->
+            <div class="card w-full md:w-[25%] lg:w-[25%] mx-auto border">
+                <h3 class="text-md text-center font-bold underline py-5">
+                    Area Calculation:
+                </h3>
+                <div class="overflow-x-auto mx-4">
+                    <table class="table w-full">
+                        <thead>
+                            <tr>
+                                <th>No</th>
+                                <th>Name</th>
+                                <th>Unit</th>
+                                <th>Button</th>
+                            </tr>
+                        </thead>
+                        <tbody id="table-container">
+                            <!-- <tr>
+                                  <th>1</th>
+                                  <td>Cy Ganderton</td>
+                                  <td>Quality Control Specialist</td>
+                                  <td>Blue</td>
+                                </tr> -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
+
 </html>
