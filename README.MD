@@ -33,4 +33,4 @@ Optional:
 3. add edit icon in equations
 4. when click on icon show input field 
 5. when clcik on side incon besides input field hide the input field and show the equations
-6. 
+
