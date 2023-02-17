@@ -19,3 +19,18 @@ Assignemnt 5:
 
 Bonus Mark:
 
+1. Minimum 8 Commit - meaning full commit is required
+2. Meaningfull name in function , file name etc and commit
+3. Make responsive for every device and show per card information in single row in mobile device respectively
+4. Show (dynamic id) in area calculation > dynamic result > button
+5. Re-use minimum 2 function in minimum 2 card or make dynamic one function for every card 
+6. Change card background color white to random while mouse is over
+
+
+Optional:
+1. Change covert to m2 button working
+2. add delete button
+3. add edit icon in equations
+4. when click on icon show input field 
+5. when clcik on side incon besides input field hide the input field and show the equations
+6. 
