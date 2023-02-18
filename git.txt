@@ -1,0 +1,12 @@
+Created functions for get input field value 
+Created function for get innerhtml text
+Created function for multiplication operation
+Created function for error handling
+
+Created event listener for triangle + Manage Error handle 
+Created event listener for rectangle + Manage Error handle
+Created event listener for parallelogram + Manage Error handle
+
+Created event listener for rhombus
+Created event listener for pentagon
+Created event listener for ellipse
