@@ -34,30 +34,28 @@
     <!--------- Main Start---------->
     <main class="m-4 md:m-0 lg:m-0">
         <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row gap-4">
-            <div class="products-cetails w-full md:w-[75%] lg:w-[75%] grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <div class="products-cetails w-full md:w-[72%] lg:w-[72%] grid md:grid-cols-2 lg:grid-cols-3 gap-4">
                 <!------- Triangle card  ------->
-                <div class="card w-full mx-auto bg-base-100 border">
+                <div class="card w-full mx-auto bg-base-100 border block">
                     <figure class="px-10 pt-10">
                         <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title font-bold">Triangle</h2>
-                        <p class="text-sm">Area (A) = 0.5 x b x h</p>
-                        <div class="py-2 ">
+                        <h2 id="triangle-title" class="card-title font-bold">Triangle</h2>
+                        <p class="text-sm py-2">Area (A) = 0.5 x b x h</p>
+                        <!-- <div class="py-2 ">
                             <span>b = 4cm</span>,
                             <span>h = 10cm</span>
-                            <!-- <span>
-                                <i class="fa-regular fa-pen-to-square"></i>
-                            </span> -->
-                        </div>
+                            <span> <i class="fa-regular fa-pen-to-square"></i></span>
+                        </div> -->
                         <div class="flex justify-between px-3 w-[70%] md:w-[90%] lg:w-[90%] ">
                             <div class="flex ">
-                                <input type="number" name="base" id=""
+                                <input type="number" name="base" min ="0" id="triangle-base"
                                     class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="b">
                                 <p>cm</p>
                             </div>
                             <div class="flex ">
-                                <input type="number" name="base" id=""
+                                <input type="number" name="base" min="0" id="triangle-height"
                                     class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="h">
                                 <p>cm</p>
                             </div>
@@ -66,31 +64,31 @@
                             </div> -->
                         </div>
                         <div class="card-actions pt-3">
-                            <button class="btn btn-wide btn-info text-white normal-case">Calculate</button>
+                            <button id="btn-triangle" class="btn btn-wide btn-info text-white normal-case">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!------- Rectangle card  ------->
-                <div class="card w-full mx-auto bg-base-100 border">
+                <div class="card w-full mx-auto bg-base-100 border block">
                     <figure class="px-10 pt-10">
                         <img src="images/rectangle.png" alt="Rectangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title font-bold">Rectangle</h2>
-                        <p class="text-sm">Area (A) = w x I</p>
-                        <div class="py-2 ">
+                        <h2 id = "rectangle-title" class="card-title font-bold">Rectangle</h2>
+                        <p class="text-sm py-2">Area (A) = w x I</p>
+                        <!-- <div class="py-2 ">
                             <span>w = 10cm </span>,
                             <span>I = 5cm </span>
-                            <!-- <span><i class="fa-regular fa-pen-to-square"></i></span> -->
-                        </div>
+                            <span><i class="fa-regular fa-pen-to-square"></i></span>
+                        </div> -->
                         <div class="flex justify-between px-5 w-[70%] md:w-[90%] lg:w-[90%] ">
                             <div class="flex">
-                                <input type="number" name="base" id=""
+                                <input type="number" name="base" min="0" id="rectangle-width"
                                     class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="w">
                                 <p>cm</p>
                             </div>
                             <div class="flex">
-                                <input type="number" name="base" id=""
+                                <input type="number" name="base" min="0" id="rectangle-length"
                                     class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="I">
                                 <p>cm</p>
                             </div>
@@ -99,31 +97,31 @@
                             </div> -->
                         </div>
                         <div class="card-actions pt-3">
-                            <button class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
+                            <button id="btn-rectangle" class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!------- Parallelogram card  ------->
-                <div class="card w-full mx-auto bg-base-100 border">
+                <div class="card w-full mx-auto bg-base-100 border block">
                     <figure class="px-10 pt-10">
                         <img src="images/parallelogram.png" alt="Rectangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title font-bold">Parallelogram</h2>
-                        <p class="text-sm">Area (A) = b x h</p>
-                        <div class="py-2 ">
+                        <h2 id ="parallelogram-title" class="card-title font-bold">Parallelogram</h2>
+                        <p class="text-sm py-2">Area (A) = b x h</p>
+                        <!-- <div class="py-2 ">
                             <span>b = 10cm </span>,
                             <span>h = 12cm </span>
-                            <!-- <span><i class="fa-regular fa-pen-to-square"></i></span> -->
-                        </div>
+                            <span><i class="fa-regular fa-pen-to-square"></i></span>
+                        </div> -->
                         <div class="flex justify-between px-5 w-[70%] md:w-[90%] lg:w-[90%] ">
                             <div class="flex ">
-                                <input type="number" name="base" id=""
+                                <input type="number" name="base" min="0" id="parallelogram-base"
                                     class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="b">
                                 <p>cm</p>
                             </div>
                             <div class="flex ">
-                                <input type="number" name="base" id=""
+                                <input type="number" name="base" min="0" id="parallelogram-height"
                                     class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="h">
                                 <p>cm</p>
                             </div>
@@ -132,24 +130,24 @@
                             </div> -->
                         </div>
                         <div class="card-actions pt-3">
-                            <button class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
+                            <button id="btn-parallelogram" class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!------- Rhombus card  ------->
-                <div class="card w-full mx-auto bg-base-100 border">
+                <div class="card w-full mx-auto bg-base-100 border block">
                     <figure class="px-10 pt-10">
                         <img src="images/rhombus.png" alt="Rectangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title font-bold">Rhombus</h2>
+                        <h2 id ="rhombus-title" class="card-title font-bold">Rhombus</h2>
                         <p class="text-sm">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
                         <div class="py-2 ">
-                            <span>d<sub>1</sub> = 16cm </span>,
-                            <span>d<sub>2</sub> = 8cm </span>
+                            <span id="">d<sub>1</sub> = 16cm </span>,
+                            <span id="">d<sub>2</sub> = 8cm </span>
                             <!-- <span><i class="fa-regular fa-pen-to-square"></i></span> -->
                         </div>
-                        <div class="flex justify-between px-5 w-[70%] md:w-[90%] lg:w-[90%] ">
+                        <!-- <div class="flex justify-between px-5 w-[70%] md:w-[90%] lg:w-[90%] ">
                             <div class="flex">
                                 <input type="number" name="base" id=""
                                     class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="b1">
@@ -160,29 +158,29 @@
                                     class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="b2">
                                 <p>cm</p>
                             </div>
-                            <!--  <div class="flex ">
+                             <div class="flex ">
                                 <input type="checkbox" class="checkbox checkbox-info checkbox-sm" name="" id="">
-                            </div> -->
-                        </div>
+                            </div>
+                        </div> -->
                         <div class="card-actions pt-3">
-                            <button class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
+                            <button id="btn-rhombus" class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!------- Pentagon card  ------->
-                <div class="card w-full mx-auto bg-base-100 border">
+                <div class="card w-full mx-auto bg-base-100 border block">
                     <figure class="px-10 pt-10">
                         <img src="images/pentagon.png" alt="Rectangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title font-bold">Pentagon</h2>
+                        <h2 id="pentagon-title" class="card-title font-bold">Pentagon</h2>
                         <p class="text-sm">Area (A) = 0.5 x p x b</p>
                         <div class="py-2 ">
                             <span>p = 6cm </span>,
                             <span>b = 10cm </span>
                             <!-- <span><i class="fa-regular fa-pen-to-square"></i></span> -->
                         </div>
-                        <div class="flex justify-between px-5 w-[70%] md:w-[90%] lg:w-[90%] ">
+                        <!-- <div class="flex justify-between px-5 w-[70%] md:w-[90%] lg:w-[90%] ">
                             <div class="flex ">
                                 <input type="number" name="base" id=""
                                     class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="p">
@@ -193,29 +191,29 @@
                                     class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="b">
                                 <p>cm</p>
                             </div>
-                            <!-- <div class="flex ">
+                            <div class="flex ">
                                 <input type="checkbox" class="checkbox checkbox-info checkbox-sm" name="" id="">
-                            </div> -->
-                        </div>
+                            </div>
+                        </div> -->
                         <div class="card-actions pt-3">
-                            <button class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
+                            <button id="btn-pentagon" class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!------- Ellipse card  ------->
-                <div class="card w-full mx-auto bg-base-100 border">
+                <div class="card w-full mx-auto bg-base-100 border block">
                     <figure class="px-10 pt-10">
                         <img src="images/ellipse.png" alt="Rectangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 class="card-title font-bold">Ellipse</h2>
+                        <h2 id="ellipse-title" class="card-title font-bold">Ellipse</h2>
                         <p class="text-sm">Area (A) = πab</p>
                         <div class="py-2 ">
-                            <span>a = 10cm </span>,
-                            <span>b = 4cm </span>
+                            <span id="">a = 10cm </span>,
+                            <span id="">b = 4cm </span>
                             <!-- <span><i class="fa-regular fa-pen-to-square"></i></span> -->
                         </div>
-                        <div class="flex justify-between px-5 w-[70%] md:w-[90%] lg:w-[90%] ">
+                       <!--  <div class="flex justify-between px-5 w-[70%] md:w-[90%] lg:w-[90%] ">
                             <div class="flex ">
                                 <input type="number" name="base" id=""
                                     class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="a">
@@ -226,31 +224,31 @@
                                     class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="b">
                                 <p>cm</p>
                             </div>
-                            <!--  <div class="flex ">
+                             <div class="flex ">
                                 <input type="checkbox" class="checkbox checkbox-info checkbox-sm" name="" id="">
-                            </div> -->
-                        </div>
-                        <div class="card-actions pt-3">
-                            <button class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
+                            </div>
+                        </div> -->
+                        <div class="card-actions pt-3 ">
+                            <button id="btn-ellipse" class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- cart details div  -->
-            <div class="card w-full md:w-[25%] lg:w-[25%] mx-auto border">
+            <!-- Area Calculation  -->
+            <div class="card w-full md:w-[28%] lg:w-[28%] border overflow-y-auto">
                 <h3 class="text-md text-center font-bold underline py-5">
                     Area Calculation:
                 </h3>
                 <div class="overflow-x-auto mx-4">
                     <table class="table w-full">
-                        <thead>
+                       <!--  <thead>
                             <tr>
                                 <th>No</th>
                                 <th>Name</th>
                                 <th>Unit</th>
                                 <th>Button</th>
                             </tr>
-                        </thead>
+                        </thead> -->
                         <tbody id="table-container">
                             <!-- <tr>
                                   <th>1</th>
@@ -264,6 +262,8 @@
             </div>
         </section>
     </main>
+    <script src="script/function.js"></script>
+    <script src="script/script.js"></script>
 </body>
 
 </html>
