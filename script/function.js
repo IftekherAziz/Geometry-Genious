@@ -12,9 +12,9 @@ function areaCalculation(dynamicID, title, total) {
   const container = document.getElementById("table-container");
   const tr = document.createElement("tr");
   tr.innerHTML = `
-    <td class='text-sm'>${dynamicID}</td>
-    <td class='text-sm'>${title}</td>
-    <td class='text-sm'>${total}<span>cm<sup>2</sup></span></td>
+    <td class='text-xs'>${dynamicID}</td>
+    <td class='text-xs'>${title}</td>
+    <td class='text-xs'>${total}<span>cm<sup>2</sup></span></td>
     <td><a class="btn btn-info btn-sm text-xs text-white normal-case">Convert to m <sup>2</sup></a></td>
     `;
   container.appendChild(tr);
