@@ -19,7 +19,7 @@
 </head>
 
 <body>
-    <!--------- Header Start---------->
+    <!--------- Header Section Start ---------->
     <header class="m-4 md:m-12">
         <div class="navbar bg-sky-100 p-6 rounded flex justify-between">
             <div class="flex flex-col">
@@ -31,26 +31,23 @@
             </div>
         </div>
     </header>
-    <!--------- Main Start---------->
+    <!----------- Header Section End ----------->
+
+    <!--------- Main Section Start---------->
     <main class="m-4 md:m-0 lg:m-0">
         <section class="lg:px-12 flex flex-col md:flex-row lg:flex-row gap-4">
             <div class="products-cetails w-full md:w-[72%] lg:w-[72%] grid md:grid-cols-2 lg:grid-cols-3 gap-4">
-                <!------- Triangle card  ------->
-                <div class="card w-full mx-auto bg-base-100 border block">
+                <!-------------- Triangle Card Start ------------>
+                <div onmouseover="randomColor(this)" class="card w-full mx-auto bg-base-100 border block">
                     <figure class="px-10 pt-10">
-                        <img src="images/triangle.png" alt="Shoes" class="rounded-xl" />
+                        <img src="images/triangle.png" alt="Triangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 id="triangle-title" class="card-title font-bold">Triangle</h2>
                         <p class="text-sm py-2">Area (A) = 0.5 x b x h</p>
-                        <!-- <div class="py-2 ">
-                            <span>b = 4cm</span>,
-                            <span>h = 10cm</span>
-                            <span> <i class="fa-regular fa-pen-to-square"></i></span>
-                        </div> -->
                         <div class="flex justify-between px-3 w-[70%] md:w-[90%] lg:w-[90%] ">
                             <div class="flex ">
-                                <input type="number" name="base" min ="0" id="triangle-base"
+                                <input type="number" name="base" min="0" id="triangle-base"
                                     class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="b">
                                 <p>cm</p>
                             </div>
@@ -58,29 +55,25 @@
                                 <input type="number" name="base" min="0" id="triangle-height"
                                     class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="h">
                                 <p>cm</p>
-                            </div>
-                            <!--  <div class="flex ">
-                                <input type="checkbox" class= "checkbox checkbox-info checkbox-sm" name="" id="">
-                            </div> -->
+                            </div>                          
                         </div>
                         <div class="card-actions pt-3">
-                            <button id="btn-triangle" class="btn btn-wide btn-info text-white normal-case">Calculate</button>
+                            <button id="btn-triangle"
+                                class="btn btn-wide btn-info text-white normal-case">Calculate</button>
                         </div>
                     </div>
                 </div>
-                <!------- Rectangle card  ------->
-                <div class="card w-full mx-auto bg-base-100 border block">
+                <!-------------- Triangle Card End ------------>
+
+                <!-------------- Rectangle Card Start -------------->
+                <div onmouseover="randomColor(this)" class="card w-full mx-auto bg-base-100 border block">
                     <figure class="px-10 pt-10">
                         <img src="images/rectangle.png" alt="Rectangle" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 id = "rectangle-title" class="card-title font-bold">Rectangle</h2>
+                        <h2 id="rectangle-title" class="card-title font-bold">Rectangle</h2>
                         <p class="text-sm py-2">Area (A) = w x I</p>
-                        <!-- <div class="py-2 ">
-                            <span>w = 10cm </span>,
-                            <span>I = 5cm </span>
-                            <span><i class="fa-regular fa-pen-to-square"></i></span>
-                        </div> -->
+                        
                         <div class="flex justify-between px-5 w-[70%] md:w-[90%] lg:w-[90%] ">
                             <div class="flex">
                                 <input type="number" name="base" min="0" id="rectangle-width"
@@ -92,28 +85,24 @@
                                     class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="I">
                                 <p>cm</p>
                             </div>
-                            <!-- <div class="flex ">
-                                <input type="checkbox" class="checkbox checkbox-info checkbox-sm" name="" id="">
-                            </div> -->
                         </div>
                         <div class="card-actions pt-3">
-                            <button id="btn-rectangle" class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
+                            <button id="btn-rectangle"
+                                class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
                         </div>
                     </div>
                 </div>
-                <!------- Parallelogram card  ------->
-                <div class="card w-full mx-auto bg-base-100 border block">
+                <!-------------- Rectangle Card End -------------->
+
+                <!------------- Parallelogram Card Start -------------->
+                <div onmouseover="randomColor(this)" class="card w-full mx-auto bg-base-100 border block">
                     <figure class="px-10 pt-10">
-                        <img src="images/parallelogram.png" alt="Rectangle" class="rounded-xl" />
+                        <img src="images/parallelogram-rb.png" alt="Parallelogram" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 id ="parallelogram-title" class="card-title font-bold">Parallelogram</h2>
+                        <h2 id="parallelogram-title" class="card-title font-bold">Parallelogram</h2>
                         <p class="text-sm py-2">Area (A) = b x h</p>
-                        <!-- <div class="py-2 ">
-                            <span>b = 10cm </span>,
-                            <span>h = 12cm </span>
-                            <span><i class="fa-regular fa-pen-to-square"></i></span>
-                        </div> -->
+                       
                         <div class="flex justify-between px-5 w-[70%] md:w-[90%] lg:w-[90%] ">
                             <div class="flex ">
                                 <input type="number" name="base" min="0" id="parallelogram-base"
@@ -124,146 +113,99 @@
                                 <input type="number" name="base" min="0" id="parallelogram-height"
                                     class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="h">
                                 <p>cm</p>
-                            </div>
-                            <!--  <div class="flex ">
-                                <input type="checkbox" class="checkbox checkbox-info checkbox-sm" name="" id="">
-                            </div> -->
+                            </div>                           
                         </div>
                         <div class="card-actions pt-3">
-                            <button id="btn-parallelogram" class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
+                            <button id="btn-parallelogram"
+                                class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
                         </div>
                     </div>
                 </div>
-                <!------- Rhombus card  ------->
-                <div class="card w-full mx-auto bg-base-100 border block">
+                <!------------- Parallelogram Card End -------------->
+
+                <!------------- Rhombus Card Start --------------->
+                <div onmouseover="randomColor(this)" class="card w-full mx-auto bg-base-100 border block">
                     <figure class="px-10 pt-10">
-                        <img src="images/rhombus.png" alt="Rectangle" class="rounded-xl" />
+                        <img src="images/rhombus-rb.png" alt="Rhombus" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
-                        <h2 id ="rhombus-title" class="card-title font-bold">Rhombus</h2>
+                        <h2 id="rhombus-title" class="card-title font-bold">Rhombus</h2>
                         <p class="text-sm">Area (A) = 0.5 x d<sub>1</sub> x d<sub>2</sub></p>
                         <div class="py-2 ">
                             <span id="">d<sub>1</sub> = 16cm </span>,
-                            <span id="">d<sub>2</sub> = 8cm </span>
-                            <!-- <span><i class="fa-regular fa-pen-to-square"></i></span> -->
-                        </div>
-                        <!-- <div class="flex justify-between px-5 w-[70%] md:w-[90%] lg:w-[90%] ">
-                            <div class="flex">
-                                <input type="number" name="base" id=""
-                                    class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="b1">
-                                <p>cm</p>
-                            </div>
-                            <div class="flex ">
-                                <input type="number" name="base" id=""
-                                    class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="b2">
-                                <p>cm</p>
-                            </div>
-                             <div class="flex ">
-                                <input type="checkbox" class="checkbox checkbox-info checkbox-sm" name="" id="">
-                            </div>
-                        </div> -->
+                            <span id="">d<sub>2</sub> = 8cm </span>                           
+                        </div>                 
                         <div class="card-actions pt-3">
-                            <button id="btn-rhombus" class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
+                            <button id="btn-rhombus"
+                                class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
                         </div>
                     </div>
                 </div>
-                <!------- Pentagon card  ------->
-                <div class="card w-full mx-auto bg-base-100 border block">
+                <!---------------- Rhombus Card End ----------------->
+
+                <!---------------- Pentagon Card Start --------------->
+                <div onmouseover="randomColor(this)" class="card w-full mx-auto bg-base-100 border block">
                     <figure class="px-10 pt-10">
-                        <img src="images/pentagon.png" alt="Rectangle" class="rounded-xl" />
+                        <img src="images/pentagon-rb.png" alt="Pentagon" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 id="pentagon-title" class="card-title font-bold">Pentagon</h2>
                         <p class="text-sm">Area (A) = 0.5 x p x b</p>
                         <div class="py-2 ">
                             <span>p = 6cm </span>,
-                            <span>b = 10cm </span>
-                            <!-- <span><i class="fa-regular fa-pen-to-square"></i></span> -->
-                        </div>
-                        <!-- <div class="flex justify-between px-5 w-[70%] md:w-[90%] lg:w-[90%] ">
-                            <div class="flex ">
-                                <input type="number" name="base" id=""
-                                    class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="p">
-                                <p>cm</p>
-                            </div>
-                            <div class="flex ">
-                                <input type="number" name="base" id=""
-                                    class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="b">
-                                <p>cm</p>
-                            </div>
-                            <div class="flex ">
-                                <input type="checkbox" class="checkbox checkbox-info checkbox-sm" name="" id="">
-                            </div>
-                        </div> -->
+                            <span>b = 10cm </span>                        
+                        </div>           
                         <div class="card-actions pt-3">
-                            <button id="btn-pentagon" class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
+                            <button id="btn-pentagon"
+                                class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
                         </div>
                     </div>
                 </div>
-                <!------- Ellipse card  ------->
-                <div class="card w-full mx-auto bg-base-100 border block">
+                <!---------------- Pentagon Card End --------------->
+
+                <!--------------- Ellipse Card Start ---------------->
+                <div onmouseover="randomColor(this)" class="card w-full mx-auto bg-base-100 border block">
                     <figure class="px-10 pt-10">
-                        <img src="images/ellipse.png" alt="Rectangle" class="rounded-xl" />
+                        <img src="images/ellipse-rb.png" alt="Ellipse" class="rounded-xl" />
                     </figure>
                     <div class="card-body items-center text-center">
                         <h2 id="ellipse-title" class="card-title font-bold">Ellipse</h2>
                         <p class="text-sm">Area (A) = πab</p>
                         <div class="py-2 ">
                             <span id="">a = 10cm </span>,
-                            <span id="">b = 4cm </span>
-                            <!-- <span><i class="fa-regular fa-pen-to-square"></i></span> -->
-                        </div>
-                       <!--  <div class="flex justify-between px-5 w-[70%] md:w-[90%] lg:w-[90%] ">
-                            <div class="flex ">
-                                <input type="number" name="base" id=""
-                                    class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="a">
-                                <p>cm</p>
-                            </div>
-                            <div class="flex">
-                                <input type="number" name="base" id=""
-                                    class="outline-0 rounded w-2/12 bg-slate-200 pl-3 flex-grow" placeholder="b">
-                                <p>cm</p>
-                            </div>
-                             <div class="flex ">
-                                <input type="checkbox" class="checkbox checkbox-info checkbox-sm" name="" id="">
-                            </div>
-                        </div> -->
+                            <span id="">b = 4cm </span>                    
+                        </div>                      
                         <div class="card-actions pt-3 ">
-                            <button id="btn-ellipse" class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
+                            <button id="btn-ellipse"
+                                class="btn btn-wide btn-info text-white normal-case text-md">Calculate</button>
                         </div>
                     </div>
                 </div>
+                <!--------------- Ellipse Card End ---------------->
             </div>
-            <!-- Area Calculation  -->
+            <!------------ Area Calculation  Start ---------------->
             <div class="card w-full md:w-[28%] lg:w-[28%] border overflow-y-auto">
                 <h3 class="text-md text-center font-bold underline py-5">
                     Area Calculation:
                 </h3>
                 <div class="overflow-x-auto mx-4">
-                    <table class="table w-full">
-                       <!--  <thead>
-                            <tr>
-                                <th>No</th>
-                                <th>Name</th>
-                                <th>Unit</th>
-                                <th>Button</th>
-                            </tr>
-                        </thead> -->
+                    <table class="table w-full">                     
                         <tbody id="table-container">
-                            <!-- <tr>
-                                  <th>1</th>
-                                  <td>Cy Ganderton</td>
-                                  <td>Quality Control Specialist</td>
-                                  <td>Blue</td>
-                                </tr> -->
+                          
                         </tbody>
                     </table>
                 </div>
             </div>
+            <!------------ Area Calculation  End ---------------->
         </section>
     </main>
+    <!----------- Main Section End ------------>
+
+
+    <!----------- Script Section Start --------->
     <script src="script/function.js"></script>
     <script src="script/event.js"></script>
+    <!----------- Script Section Start --------->
 </body>
 
 </html>

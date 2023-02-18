@@ -73,3 +73,5 @@ document.getElementById("btn-ellipse").addEventListener("click", function () {
   const triangleTitle = document.getElementById("ellipse-title").innerText;
   areaCalculation(dynamicID, triangleTitle, calculate);
 });
+
+

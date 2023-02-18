@@ -1,0 +1,38 @@
+What is DOM and what is the purpose of DOM?
+
+- Document Object Model is simply called DOM.It represents the documents as nodes and objects which helps us to interact with the web page programatically.
+- The purpose of Document Object Model is to allow programs and scripts running in a web browser to access and manipulate the structure and content of our markup documents.
+
+
+How will you select HTML elements using DOM? Name the DOM methods.
+
+- There are six methods to select HTML elements using Document Object Model(DOM). We can select HTML element by their ID, Classname, Tagname, Name Attribute, Select All Element of 
+specified selector and select first element of a specified selector
+
+Here is the DOM Methods:
+getElementById – search element by element_id
+getElementsByTagName – search element by tag name (e.g., span, div)
+getElementsByClassName – search element by class name
+getElementsByName – search element by name attribute
+querySelector – returns the first element that matches the specified selector
+querySelectorAll – returns elements that match the specified selector 
+
+What is event bubble?
+
+- In Javascript Events changes the state of an object.The event bubble in javascript is a type of event propagation.It works when 
+listeners are fired from the target of an event.
+
+- Syntext of event bubbling:
+
+addEventListener(type, listener, useCapture)
+
+- type− It used to refer to the type of event.
+
+- listener− The function which we want to call when the event of the particular type occurs.
+
+- userCapture− it is a Boolean value. It indicates the event phase. It will be false by default and that indicates it is in the bubbling phase.
+ 
+What is a callback function and why will you use it?
+
+- In JavaScript functions are first-class objects.So we can pass a function to another function as an argument.A callback function is also a function where we pass this function 
+into another function as argument so that we can use it later.We use callback function to execute only after another function completes it's execution.

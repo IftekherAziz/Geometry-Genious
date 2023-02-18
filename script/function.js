@@ -102,3 +102,11 @@ function validation(errors) {
   }
   return true;
 }
+
+/* ----------------------------------------------------------------------------------------------------- */
+/* A function that changes the background color of the element that is passed to it. */
+/* ---------------------------------- Function For Random Color ---------------------------------------- */
+
+randomColor = function (e) {
+  e.style.background = "#" + ((Math.random() * 0xffffff) << 0).toString(16);
+};
